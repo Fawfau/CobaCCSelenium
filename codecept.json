@@ -1,0 +1,27 @@
+{
+  "tests": "./*_test.js",
+  "timeout": 20000,
+  "output": "./output",
+  "helpers": {
+    "WebDriverIO": {
+      "url": "http://devsgv1.cartenz.co.id/login",
+      "host":"localhost",
+      "port":"4444",
+      "protocol":"http",
+      "path":"/wd/hub",
+      "browser": "chrome, firefox",
+      "windowSize": "maximize",
+      "smartWait":20000,
+      "timeouts": {
+         "script": 60000,
+         "pageLoad": 20000
+       }
+    }
+  },
+  "include": {
+    "I": "./steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "CCSeleniumWeb"
+}
